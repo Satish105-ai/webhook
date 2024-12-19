@@ -28,7 +28,7 @@ pipeline {
             steps {
                 echo 'Uploading Docker image to S3...'
                 sh '''
-                aws s3 cp /var/lib/jenkins/workspace/pipeline-name/dockerfile s3://new-jenkins1/jenkin-folder/dockerfile --region us-east-2
+                aws s3 cp /var/lib/jenkins/workspace/webhookgit1/dockerfile s3://webhookgit/hookwebgit/dockerfile --region us-east-2
                 '''
             }
         }
